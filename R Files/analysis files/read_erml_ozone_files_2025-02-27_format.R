@@ -105,7 +105,7 @@ plot(eo$datetime, eo$process_value, type = 'l'
      ,main = main_string)
 #lines(eo$datetime, eo$dfrout/100, col = "blue")
 
-main_string <- paste("Histogram of Ozone Values and stats\nfrom",first_date, "to", last_date)
+main_string <- paste("Histogram of ozone values and stats while operating\nfrom",first_date, "to", last_date)
 
 hist(eooon$process_value, breaks = seq(-0.5,225.5,1), main = main_string)
 hist_mean <- format(trunc(mean(eooon$process_value)),nsmall = 2)
